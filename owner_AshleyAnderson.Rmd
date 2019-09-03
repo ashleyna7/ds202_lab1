@@ -1,0 +1,10 @@
+---
+title: "Lab 1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+My name is Ashley Anderson. I am a mathematics and statistics major. At parties, I tell people math is cool. The most important tools/strategies I have for organizing my work include using my planner, staying up to date on canvas, and keeping my computer files and folders clean. An interesting fact about myself is that this past weekend I just went to Canada. 
