@@ -239,15 +239,13 @@ example_data</code></pre>
   x / sum(x, na.rm = TRUE)</code></pre>
 <pre class="r"><code>mean_fun &lt;- function(x){
   m &lt;- sum(is.na(x))
-  m2 &lt;- m/length(x)
-  return(m2)
+  m/length(x)
 }
 mean_fun(x)</code></pre>
 <pre><code>## [1] 0.3333333</code></pre>
 <pre class="r"><code>fun &lt;- function(x){
   x2 &lt;- x[-which(is.na(x))]
-  m &lt;- x/sum(x2)
-  return(m)
+  x/sum(x2)
 }
 fun(x)</code></pre>
 <pre><code>##  [1] 0.16040956 0.11604096 0.11262799 0.22184300 0.12627986         NA
@@ -257,11 +255,13 @@ fun(x)</code></pre>
 <h4>4. Write a function named <code>both_na()</code>. This function take two vectors of the same length and returns the number of positions that have an <code>NA</code> value in both vectors.</h4>
 <pre class="r"><code>x1 &lt;- c(NA,2,3,NA,NA)
 y1 &lt;- c(1,NA,3,NA,NA)
-na_fun &lt;- function(x,y){
-  x &lt;- which(is.na(x))
-  y &lt;- which(is.na(y))
-  
-}</code></pre>
+
+both_na &lt;- function(x,y){
+  sum(is.na(x) &amp; is.na(y))
+}
+
+both_na(x1,y1)</code></pre>
+<pre><code>## [1] 2</code></pre>
 </div>
 </div>
 
