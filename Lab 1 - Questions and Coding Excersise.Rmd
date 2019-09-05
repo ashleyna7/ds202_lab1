@@ -59,15 +59,13 @@ example_data
 ```{r}
 mean_fun <- function(x){
   m <- sum(is.na(x))
-  m2 <- m/length(x)
-  return(m2)
+  m/length(x)
 }
 mean_fun(x)
 
 fun <- function(x){
   x2 <- x[-which(is.na(x))]
-  m <- x/sum(x2)
-  return(m)
+  x/sum(x2)
 }
 fun(x)
 
@@ -79,10 +77,11 @@ fun(x)
 ```{r}
 x1 <- c(NA,2,3,NA,NA)
 y1 <- c(1,NA,3,NA,NA)
-na_fun <- function(x,y){
-  x <- which(is.na(x))
-  y <- which(is.na(y))
-  
+
+both_na <- function(x,y){
+  sum(is.na(x) & is.na(y))
 }
+
+both_na(x1,y1)
 ```
 
