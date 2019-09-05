@@ -1,0 +1,17 @@
+#### Name: 
+
+  Hexiang Zhang (hexzha)
+
+#### What did the Owner do in the most recent commit? What is the commit ID?
+
+  Ashley Andersons's (Ashleyna7) most recent commit was 61f6028ee8792b319c3af7966585ada0cf61fb8f
+  
+  She added question 1 to file. In this commit, she added owner_AshleyAnderson.Rmd and owner_AshleyAnderson.html.
+
+#### Knit the Owner's `owner_YourName.Rmd`. Are you able to do so without error? If you cannot, what errors did you encounter?
+
+  I did not have any issues knitting owner_AshleyAnderson.Rmd! Worked as expected!  
+
+#### Also include one tip for making Git/GitHub easier, or an error/difficulty you encountered.
+
+  I think there are a lot of tools online to help understand the organization of why GitHub is powerful. I thought this was a good [link](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners). I think it just takes some time to play around with. Having a [cheatsheet](https://learntocodewith.me/command-line/unix-command-cheat-sheet/) to look at for referrence.    
